@@ -16,6 +16,10 @@ import FadeComponent from "./practice/FadeComponent"
 import Sidebar from "./practice/Sidebar"
 import Modal from "./practice/Modal"
 import Accordion from "./practice/Accordion"
+import Notification from "./practice/Notification"
+import BouncingBall from "./practice/keyframe/BouncingBall"
+import PulsatingButton from "./practice/keyframe/PulsatingButton"
+import ZigZag from "./practice/keyframe/ZigZag"
 const App = () => {
   return (
     <div>
@@ -41,7 +45,15 @@ const App = () => {
       {/* <FadeComponent /> */}
       {/* <Sidebar /> */}
       {/* <Modal /> */}
-      <Accordion />
+      {/* <Accordion /> */}
+      {/* <Notification /> */}
+
+
+
+      {/* <BouncingBall /> */}
+      {/* <PulsatingButton/> */}
+        <ZigZag />
+
 
     </div>
   )
