@@ -20,6 +20,7 @@ import Notification from "./practice/Notification"
 import BouncingBall from "./practice/keyframe/BouncingBall"
 import PulsatingButton from "./practice/keyframe/PulsatingButton"
 import ZigZag from "./practice/keyframe/ZigZag"
+import ToggleSwitch from "./components/ToggleSwitch"
 const App = () => {
   return (
     <div>
@@ -52,7 +53,9 @@ const App = () => {
 
       {/* <BouncingBall /> */}
       {/* <PulsatingButton/> */}
-        <ZigZag />
+      {/* <ZigZag /> */}
+
+      <ToggleSwitch/>
 
 
     </div>
