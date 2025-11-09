@@ -15,6 +15,7 @@ import BouncingCircle from "./components/BouncingCircle"
 import FadeComponent from "./practice/FadeComponent"
 import Sidebar from "./practice/Sidebar"
 import Modal from "./practice/Modal"
+import Accordion from "./practice/Accordion"
 const App = () => {
   return (
     <div>
@@ -39,7 +40,8 @@ const App = () => {
 
       {/* <FadeComponent /> */}
       {/* <Sidebar /> */}
-      <Modal />
+      {/* <Modal /> */}
+      <Accordion />
 
     </div>
   )
