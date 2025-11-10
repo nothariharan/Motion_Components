@@ -26,6 +26,9 @@ import Gallery from "./gesture/Gallery"
 import StaggeredList from "./stagger/StaggeredList"
 import StaggerGrid from "./stagger/StaggerGrid"
 import StaggerText from "./stagger/StaggerText"
+import ScrollIndicator from "./projects/ScrollIndicator"
+import Loader from "./projects/Loader"
+import Carousel from "./projects/Carousel"
 const App = () => {
   return (
     <div>
@@ -70,7 +73,19 @@ const App = () => {
         <StaggeredList/>
           </div> */}
           {/* <StaggerGrid/> */}
-          <StaggerText/>
+          {/* <StaggerText/> */}
+
+
+
+
+
+
+          {/* ------PROJECTS------- */}
+          {/* <ScrollIndicator /> */}
+          {/* <Loader /> */}
+          <div className="flex justify-center items-center h-screen">
+              <Carousel />
+          </div>
     </div>
   )
 }
