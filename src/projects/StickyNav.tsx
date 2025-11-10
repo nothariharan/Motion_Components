@@ -1,0 +1,89 @@
+import { motion } from "motion/react";
+import Card from "./Card";
+
+const StickyNav = () => {
+    const menuvariants = {
+        hidden: {height: '5.6rem'},
+        visible: {height: '29rem', transition: {duration:0.3}}
+    }
+
+    const expandRowVariants = {
+        hidden: {opacity:0 ,y:50},
+        visible: (i:any) => ({
+            opacity: 1,
+            y:0,
+            transition: { delay: i*0.1,duration: 0.6}
+        })
+    }
+  return (
+    <div className="bg-black min-h-screen">
+        <motion.div className="fixed top-0 left-0 right-0 p-8 bg-white text-black rounded-lg" variants={menuvariants} initial='hidden' whileHover='visible'>
+            <div className="flex flex-col">
+                <div className="flex justify-between items-center">
+                    <div className="flex items-center">
+                        <div className="ml-2 font-semibold uppercase">hari</div>
+                    </div>
+                    <div className="hidden md:flex space-x-5 text-center">
+                        <a href="#" className="text-black font-bold">I</a>
+                        <a href="#" className="text-black font-bold">code</a>
+                        <a href="#" className="text-black font-bold">for</a>
+                        <a href="#" className="text-black font-bold">fun</a>
+                        <a href="#" className="text-black font-bold">lmao</a>
+
+                    </div>
+
+                    <div className="flex items-center ">
+                        <a href="#" className="text-black">Join Me</a>
+                    </div>
+                </div>
+
+                <motion.div className="flex flex-col py-6" variants={expandRowVariants}>
+                    <span className="blac w-full h-px bg-gray-300"></span>
+                    <motion.div variants={expandRowVariants} custom={1} className="flex items-center mt-5">
+                        <span className="border border-black rounded-full px-2 text-xs">Money</span>
+                        <p className="ml-3">Rupees</p>
+                    </motion.div>
+                    <motion.div variants={expandRowVariants} custom={1} className="flex mt-5">
+                        <Card 
+                        title="Ruppees"
+                        description="India Currency"
+                        imageUrl="https://images.unsplash.com/photo-1565371767810-ef913a6c8315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" />
+                        
+                    </motion.div>
+                    <motion.div variants={expandRowVariants} custom={1} className="flex mt-5">
+                        <Card 
+                        title="Ruppees"
+                        description="India Currency"
+                        imageUrl="https://images.unsplash.com/photo-1565371767810-ef913a6c8315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" />
+                        
+                    </motion.div>
+                    <motion.div variants={expandRowVariants} custom={1} className="flex mt-5">
+                        <Card 
+                        title="Ruppees"
+                        description="India Currency"
+                        imageUrl="https://images.unsplash.com/photo-1565371767810-ef913a6c8315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" />
+                        
+                    </motion.div>
+                    <motion.div variants={expandRowVariants} custom={1} className="flex mt-5">
+                        <Card 
+                        title="Ruppees"
+                        description="India Currency"
+                        imageUrl="https://images.unsplash.com/photo-1565371767810-ef913a6c8315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" />
+                        
+                    </motion.div>
+
+                    <motion.div variants={expandRowVariants} custom={1} className="flex mt-5">
+                        <Card 
+                        title="Ruppees"
+                        description="India Currency"
+                        imageUrl="https://images.unsplash.com/photo-1565371767810-ef913a6c8315?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" />
+                        
+                    </motion.div>
+
+                </motion.div>
+            </div>
+        </motion.div>
+    </div>
+  )
+}
+export default StickyNav

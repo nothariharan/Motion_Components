@@ -13,7 +13,7 @@ import ScrollCard from "./components/ScrollCard"
 import ScrollAnimation from "./components/ScrollAnimation"
 import BouncingCircle from "./components/BouncingCircle"
 import FadeComponent from "./practice/FadeComponent"
-import Sidebar from "./practice/Sidebar"
+import Sidebar from "./projects/Sidebar"
 import Modal from "./practice/Modal"
 import Accordion from "./practice/Accordion"
 import Notification from "./practice/Notification"
@@ -29,6 +29,7 @@ import StaggerText from "./stagger/StaggerText"
 import ScrollIndicator from "./projects/ScrollIndicator"
 import Loader from "./projects/Loader"
 import Carousel from "./projects/Carousel"
+import StickyNav from "./projects/StickyNav"
 const App = () => {
   return (
     <div>
@@ -83,9 +84,13 @@ const App = () => {
           {/* ------PROJECTS------- */}
           {/* <ScrollIndicator /> */}
           {/* <Loader /> */}
-          <div className="flex justify-center items-center h-screen">
+          {/* <div className="flex justify-center items-center h-screen">
               <Carousel />
-          </div>
+          </div> */}
+          {/* <div className="flex justify-center items-center h-screen w-full">
+            <Sidebar />
+          </div> */}
+          <StickyNav />
     </div>
   )
 }
