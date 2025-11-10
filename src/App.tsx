@@ -30,6 +30,7 @@ import ScrollIndicator from "./projects/ScrollIndicator"
 import Loader from "./projects/Loader"
 import Carousel from "./projects/Carousel"
 import StickyNav from "./projects/StickyNav"
+import ProgressSteps from "./projects/ProgressSteps"
 const App = () => {
   return (
     <div>
@@ -90,7 +91,8 @@ const App = () => {
           {/* <div className="flex justify-center items-center h-screen w-full">
             <Sidebar />
           </div> */}
-          <StickyNav />
+          {/* <StickyNav /> */}
+          <ProgressSteps />
     </div>
   )
 }
