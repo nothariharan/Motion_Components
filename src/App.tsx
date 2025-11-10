@@ -23,6 +23,9 @@ import ZigZag from "./practice/keyframe/ZigZag"
 import ToggleSwitch from "./components/ToggleSwitch"
 import SwipeCard from "./gesture/SwipeCard"
 import Gallery from "./gesture/Gallery"
+import StaggeredList from "./stagger/StaggeredList"
+import StaggerGrid from "./stagger/StaggerGrid"
+import StaggerText from "./stagger/StaggerText"
 const App = () => {
   return (
     <div>
@@ -61,8 +64,13 @@ const App = () => {
         {/* <div className="h-screen flex justify-center items-center bg-[#0d1017] text-white">
           <SwipeCard/>
         </div> */}
-        <Gallery/>
+        {/* <Gallery/> */}
 
+        {/* <div className="h-screen flex justify-center items-center bg-[#0d1017] text-white">
+        <StaggeredList/>
+          </div> */}
+          {/* <StaggerGrid/> */}
+          <StaggerText/>
     </div>
   )
 }
