@@ -21,6 +21,8 @@ import BouncingBall from "./practice/keyframe/BouncingBall"
 import PulsatingButton from "./practice/keyframe/PulsatingButton"
 import ZigZag from "./practice/keyframe/ZigZag"
 import ToggleSwitch from "./components/ToggleSwitch"
+import SwipeCard from "./gesture/SwipeCard"
+import Gallery from "./gesture/Gallery"
 const App = () => {
   return (
     <div>
@@ -55,8 +57,11 @@ const App = () => {
       {/* <PulsatingButton/> */}
       {/* <ZigZag /> */}
 
-      <ToggleSwitch/>
-
+      {/* <ToggleSwitch/> */}
+        {/* <div className="h-screen flex justify-center items-center bg-[#0d1017] text-white">
+          <SwipeCard/>
+        </div> */}
+        <Gallery/>
 
     </div>
   )
